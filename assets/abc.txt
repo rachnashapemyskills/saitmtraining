@@ -1,0 +1,86 @@
+		******************************************* Database ************************************************
+Data	:  Data is raw fact and figure 
+Database : It is used to store large data in tabular form or in rows and columns. 
+	   In database we can have more than one table.
+
+_________________________________________________________________________________________________________________________
+
+Table Name 	:	Entity
+Rows		:	Records/ Tuple
+Columns		:	Attributes
+_________________________________________________________________________________________________________________________
+Ex: 
+	Employee
+EID	ENAME	ECITY
+101	Raman	Delhi
+102	Aman	Noida
+103	Suman	Dehradun
+____________________________________________________________________________________________________
+Entity		:  Employee
+Attributes	:  EID, ENAME,  ECITY
+Records		: [101, Raman, Delhi], [102, Aman, Noida] ,[103,Suman, Dehradun]
+____________________________________________________________________________________________________
+
+DBMS	: DAtabase Management System
+	  Here data is stored in Tabular format , [ rows & columns]
+	  But here tables are not connected with each other
+          And it store less data than RDBMS.
+
+Ex:	Flat File System [File Manager] , DB2,... 
+
+RDBMS	: Relational Database Management System.
+	  Where we have more than on table  and tables are connected with each other.
+		Here we can store 4-5 billion data .
+Ex:	MySQL, SQL Server , Oracle, ACCESS
+____________________________________________________________________________________________________
+
+MySQL : It is a command base Structured Query Language
+	Where all work done by using queries/commands 
+	It was developed using C++ 
+	MySQL is not case sensitive in Windows but sometimes if we use Linux than it can be case sensitive
+____________________________________________________________________________________________________
+Queries :
+1. Database Creation
+2. Table Creation
+3. Data Insertion
+4. Data Fetch
+___________________________________________________________________________________________________
+Data Type: It defiens the type of data will store in a column.
+Types of data type in mysql:
+1. number 
+	int		= 78,56,89		by default it can store upto 11 digits
+	decimal		= 78000.56		
+
+2. String
+	char		- 'Raman'		It can store upto 255 characters
+	varchar		- 'Raman'		It can store 65536 Character
+	text		-			For lengthy data
+
+	Storing CHAR Values
+
+Value	CHAR(4)	Actual storage required	Description
+''	'    '	4 bytes	4 bytes for trailing spaces
+'ab'	'ab '	4 bytes	2 bytes for data and 2 bytes for trailing spaces
+'abcd'	'abcd'	4 bytes	4 bytes for data
+'abcdefgh'	'abcd'	4 bytes	4 bytes for data *
+_________________________________________________________________________________
+
+
+Storing VARCHAR values
+Value		VARCHAR(4)	Actual storage required		Description
+''		''		1 byte				1 byte for length prefix
+'ab'		'ab'		3 bytes				2 bytes for data and 1 byte for the prefix
+'abcd'		'abcd'		5 bytes				4 bytes for data and 1 byte for the prefix
+'abcdefgh'	'abcd'		5 bytes				4 bytes for data and 1 byte for the length prefix *
+
+___________________________________________________________________________________
+
+3. Date			date
+4. Enum
+5. set
+____________________________________________________________________________________________________________________
+Rules for table name and Column Name
+1. Tanle Name must start with an alphabet 
+2. There will be no space in between Table and Column name 
+3. Table name and column name must be meanigful and short
+4. It can not contain any special character except underscore(_)
