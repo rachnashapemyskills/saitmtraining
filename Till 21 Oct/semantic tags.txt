@@ -1,0 +1,53 @@
+Semantic Tags :
+<header> </header>
+<footer> </footer>
+<section> </section>
+<aside> </aside>
+<nav> </nav>
+<artical> </artical>
+<figure></figure>
+<figcaption> </figcaption>
+<main> </main>
+<summary> </summary>
+<time> </time>
+<meter> </meter>
+
+
+
+GET	POST
+In GET method, values are visible in the URL.	
+In POST method, values are not visible in the URL.
+
+GET has a limitation on the length of the values, generally 255 characters.	
+POST has no limitation on the length of the values since they are submitted via the body of HTTP.
+
+GET performs are better compared to POST because of the simple nature of appending the values in the URL.	
+
+POST has lower performance as compared to GET method because of time spent in including POST values in the HTTP body.
+
+GET results can be bookmarked.	
+POST results cannot be bookmarked.
+
+GET Parameters remain in web browser history.	
+POST Parameters are not saved in web browser history.
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="login_form" action="/login/device-based/regular/login/?login_attempt=1&amp;lwv=120&amp;lwc=1348092" method="post" onsubmit="">
+
+
+
+
+
+
+
+
