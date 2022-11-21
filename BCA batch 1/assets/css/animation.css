@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+.div1 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: move_div;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes move_div {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 400px;
+        top: 0;
+        background-color: yellowgreen;
+    }
+
+    50% {
+        left: 400px;
+        top: 400px;
+    }
+
+    75% {
+        left: 0;
+        top: 400px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+.div2 {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: move_div2;
+    animation-duration: 15s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes move_div2 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    5% {
+        left: 40px;
+        top: 0;
+        background-color: yellowgreen;
+    }
+
+    10% {
+        left: 40px;
+        top: 40px;
+
+        background-color: blue;
+    }
+
+    15% {
+        left: 80px;
+        top: 40px;
+        background-color: blueviolet;
+    }
+
+   20% {
+        left: 80px;
+        top: 80px;
+    }
+}
