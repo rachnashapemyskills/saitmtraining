@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color: deeppink;
+}
+h1{
+    color: aliceblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 2s all;
+}
+a:hover{
+    background-color: chocolate;
+    color: black;
+}
+.flex-container{
+    display: flex;
+}
+.flex-item1{
+    background-color: aqua;
+    flex: 20%;
+}
+.flex-item2{
+    /* background-color: chocolate; */
+    flex: 80%;
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin-left: 30px;
+}
+.slider{
+    height: 570px;
+   background-color: yellowgreen;
+   animation-name: batch3;
+   animation-duration: 3s;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes batch3{
+    from
+    {
+        background-color: yellowgreen;
+    }
+    to{
+            background-color: darkcyan;
+    }
+}
